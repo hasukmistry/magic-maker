@@ -1,0 +1,19 @@
+services:
+  thingsRestApi:
+    class: \MagicMaker\RestApi\Things_Api
+
+  assets:
+    class: \MagicMaker\Assets
+
+  formShortcode:
+    class: \MagicMaker\Shortcode\Form
+
+  listShortcode:
+    class: \MagicMaker\Shortcode\List_Things
+
+  formAction:
+    class: \MagicMaker\WpAction\Form
+
+  listAction:
+    class: \MagicMaker\WpAction\List_Things
+
