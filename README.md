@@ -36,7 +36,7 @@ To build the WordPress plugin archive, run the following command:
 make build
 ```
 
-This command generates `wp-dev.zip`, a self-contained archive ready for WordPress installation.
+This command generates `magic-maker.zip`, a self-contained archive ready for WordPress installation.
 
 ## Shortcodes
 
