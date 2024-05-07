@@ -1,0 +1,1 @@
+const magicMakerObj = window.magicMaker;

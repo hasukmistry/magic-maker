@@ -9,6 +9,8 @@ declare(strict_types=1);
 
 namespace MagicMaker;
 
+use MagicMaker\RestApi\Base;
+
 /**
  * Assets class
  *
@@ -40,5 +42,26 @@ class Assets {
 			array(),
 			'1.0.0'
 		);
+
+		wp_register_script(
+			'magic-maker-script',
+			MAGIC_MAKER_PLUGIN_URL . '/assets/js/script.js',
+			array(),
+			'1.0.0',
+			true
+		);
+
+		wp_localize_script(
+			'magic-maker-script',
+			'magicMaker',
+			array(
+				'rest' => array(
+					'url'   => esc_url_raw( rest_url( Base::ROUTE_NAMESPACE ) ),
+					'nonce' => wp_create_nonce( Base::NONCE ),
+				),
+			)
+		);
+
+		wp_enqueue_script( 'magic-maker-script' );
 	}
 }
