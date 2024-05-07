@@ -190,4 +190,4 @@ curl --location 'https://wordpress.test/wp-json/magic-maker/v1/things/add' \
 
 ## License
 
-Wp Dev is free software released under the GNU General Public License version 2 or any later version. Refer to [LICENSE](./LICENSE) for details.
+Magic Maker is free software released under the GNU General Public License version 2 or any later version. Refer to [LICENSE](./LICENSE) for details.
