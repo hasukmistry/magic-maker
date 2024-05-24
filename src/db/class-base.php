@@ -196,7 +196,7 @@ abstract class Base implements BaseInterface {
 			$key    = 'total-items-' . sanitize_title( $table_name . $search_query );
 			$cached = wp_cache_get( $key, self::CACHE_GROUP );
 
-			wp_cache_delete( $key, self::CACHE_GROUP );
+			// wp_cache_delete( $key, self::CACHE_GROUP );
 
 			if ( $cached ) {
 				return $cached;
